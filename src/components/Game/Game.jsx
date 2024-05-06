@@ -9,9 +9,6 @@ const Game = () => {
     <div className="game">
       <div className="status">
         <div className="statusMsg">{getStatusMessage()}</div>
-        <button className="reset-button" onClick={resetGame}>
-          Reset Game
-        </button>
       </div>
       <div className="board">
         {board.map((b, idx) => {
@@ -27,6 +24,9 @@ const Game = () => {
           );
         })}
       </div>
+      <button className="reset-button" onClick={resetGame}>
+        Reset Game
+      </button>
     </div>
   );
 };
