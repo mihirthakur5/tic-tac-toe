@@ -1,0 +1,49 @@
+.game {
+  max-width: calc(3 * 100px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.status {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  border: 2px solid #cccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #ad88c6;
+}
+
+.cell:hover {
+  background-color: #e1afd1;
+}
+
+.reset-button {
+  padding: 10px 15px;
+  background-color: #ffe6e6;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.statusMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  font-weight: 600;
+}
